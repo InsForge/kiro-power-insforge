@@ -3,6 +3,7 @@ name: "insforge"
 displayName: "InsForge"
 description: "The backend built for AI-assisted development - PostgreSQL database, file storage, edge functions, and authentication through MCP"
 keywords: ["insforge", "backend", "database", "postgres", "storage", "edge-functions", "auth", "mcp", "ai-development", "baas"]
+author: "InsForge"
 ---
 
 # InsForge Power
