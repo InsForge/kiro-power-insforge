@@ -17,10 +17,9 @@ Requires InsForge API key and instance URL:
       "command": "npx",
       "args": ["-y", "@insforge/mcp@latest"],
       "env": {
-        "API_KEY": "YOUR_INSFORGE_API_KEY",
-        "API_BASE_URL": "YOUR_INSFORGE_URL"
-      },
-      "disabled": false
+        "API_KEY": "${INSFORGE_API_KEY}",
+        "API_BASE_URL": "${INSFORGE_URL}"
+      }
     }
   }
 }

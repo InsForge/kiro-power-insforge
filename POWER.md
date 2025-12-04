@@ -3,7 +3,6 @@ name: "insforge"
 displayName: "InsForge"
 description: "The backend built for AI-assisted development - PostgreSQL database, file storage, edge functions, and authentication through MCP"
 keywords: ["insforge", "backend", "database", "postgres", "storage", "edge-functions", "auth", "mcp", "ai-development", "baas"]
-author: "InsForge"
 ---
 
 # InsForge Power
@@ -273,10 +272,9 @@ get-table-schema({ tableName: "users" })
       "command": "npx",
       "args": ["-y", "@insforge/mcp@latest"],
       "env": {
-        "API_KEY": "YOUR_INSFORGE_API_KEY",
-        "API_BASE_URL": "YOUR_INSFORGE_URL"
-      },
-      "disabled": false
+        "API_KEY": "${INSFORGE_API_KEY}",
+        "API_BASE_URL": "${INSFORGE_URL}"
+      }
     }
   }
 }
